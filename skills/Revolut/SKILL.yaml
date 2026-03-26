@@ -1,0 +1,10 @@
+sources:
+    - https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/
+    - https://www.zakonyprolidi.cz/cs/1992-586#p4-1
+    - https://www.zakonyprolidi.cz/cs/1992-586#p10-4
+    - https://www.zakonyprolidi.cz/cs/2023-349
+    - https://www.kurzy.cz/kurzy-men/jednotny-kurz/
+    - https://www.grantthornton.cz/en/news/taxation-of-income-from-the-sale-of-securities-from-1-january-2025/
+
+claude:
+    argument-hint: "[revolut-export.csv or revolut-pnl.pdf]"

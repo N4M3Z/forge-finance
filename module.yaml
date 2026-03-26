@@ -1,0 +1,5 @@
+name: forge-finance
+version: 0.1.0
+description: Tax law rules, document analysis, and filing workflows for personal and corporate income tax.
+repository: https://github.com/N4M3Z/forge-finance
+events: []

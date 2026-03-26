@@ -1,0 +1,11 @@
+# forge-finance default configuration.
+# Override: create config.yaml (gitignored) with only the fields you want to change.
+
+agents:
+    TaxAdvisor:
+        model: strong
+        tools: Read, Grep, Glob, WebSearch, WebFetch
+
+providers:
+    claude:
+        target: ".claude"

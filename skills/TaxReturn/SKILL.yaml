@@ -1,0 +1,8 @@
+sources:
+    - https://mf.gov.cz/cs/financni-trh/ochrana-spotrebitele/aktuality/2024/dlouhodoby-investicni-produkt-a-danova-podpora-pro-54732
+    - https://www.zakonyprolidi.cz/cs/1992-586
+    - https://www.zakonyprolidi.cz/cs/2009-280
+    - https://www.financnisprava.cz/cs/dane/legislativa-a-metodika/danove-zakony/2024
+
+claude:
+    argument-hint: "[tax year, e.g. 2024]"

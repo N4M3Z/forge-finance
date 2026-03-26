@@ -1,0 +1,10 @@
+sources:
+    - https://www.zakonyprolidi.cz/cs/1992-592
+    - https://www.zakonyprolidi.cz/cs/1992-592#p3a
+    - https://www.zakonyprolidi.cz/cs/1992-592#p2
+    - https://www.zakonyprolidi.cz/cs/1992-592#p24
+    - https://www.cpzp.cz/
+    - https://www.vzp.cz/
+
+claude:
+    argument-hint: "[company code e.g. 205 or tax year]"

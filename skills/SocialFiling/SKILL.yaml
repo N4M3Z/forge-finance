@@ -1,0 +1,8 @@
+sources:
+    - https://eportal.cssz.cz/
+    - https://www.zakonyprolidi.cz/cs/1992-589
+    - https://www.zakonyprolidi.cz/cs/1992-589#p5b
+    - https://www.zakonyprolidi.cz/cs/1992-589#p7
+
+claude:
+    argument-hint: "[CSSZ-2025.xml or tax year]"

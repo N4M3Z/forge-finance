@@ -1,0 +1,10 @@
+{
+    "name": "forge-finance",
+    "version": "0.1.0",
+    "description": "Tax law rules, document analysis, and filing workflows for personal and corporate income tax.",
+    "author": {"name": "Martin Zeman"},
+    "license": "EUPL-1.2",
+    "repository": "https://github.com/N4M3Z/forge-finance",
+    "keywords": ["tax", "dpfo", "czech", "finance", "fakturoid", "revolut"],
+    "skills": ["./skills"]
+}

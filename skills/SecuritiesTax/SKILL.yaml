@@ -1,0 +1,9 @@
+sources:
+    - https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/
+    - https://www.zakonyprolidi.cz/cs/1992-586#p4-1
+    - https://www.zakonyprolidi.cz/cs/1992-586#p10-4
+    - https://www.zakonyprolidi.cz/cs/2023-349
+    - https://www.kurzy.cz/kurzy-men/jednotny-kurz/
+
+claude:
+    argument-hint: "[transactions from brokerage parser]"

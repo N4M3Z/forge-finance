@@ -1,0 +1,8 @@
+sources:
+    - https://www.fakturoid.cz/api/v3
+    - https://www.fakturoid.cz/api/v3/authorization
+    - https://www.fakturoid.cz/api/v3/invoices
+    - https://www.fakturoid.cz/api/v3/expenses
+
+claude:
+    argument-hint: "[tax year, e.g. 2025]"

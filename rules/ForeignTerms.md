@@ -1,0 +1,1 @@
+Non-English legal and financial terms in backticks: `bytové potřeby`, `daňové potvrzení k DIP`. English equivalents in plain prose. Use the international name (LTIP, supplementary pension savings) in running text; Czech abbreviation (`DIP`, `DPFO`) only in backtick context.

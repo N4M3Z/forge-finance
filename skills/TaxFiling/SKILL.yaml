@@ -1,0 +1,8 @@
+sources:
+    - https://adisspr.mfcr.cz/pmd/epo/formulare/nacist-xml
+    - https://adisspr.mfcr.cz/adis/jepo/schema/dpfdp7_epo2.xsd
+    - https://adisspr.mfcr.cz/dpr/adis/idpr_pub/epo2_info/popis_struktury_detail.faces?zkratka=DPFDP7
+    - https://www.zakonyprolidi.cz/cs/1992-586
+
+claude:
+    argument-hint: "[DPFO-2025.xml or parse|diff|generate]"

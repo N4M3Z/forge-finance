@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSVC xmlns="http://schemas.cssz.cz/OSVC2025" version="1.0">
+  <VENDOR productName="ForgeFinance" productVersion="0.1.0"></VENDOR>
+  <SENDER ISDSreport="3" VerzeProtokolu="1.0"></SENDER>
+  <prehledosvc for="prehledosvc" dep="" vsdp="" rok="2025" typ="O">
+    <client>
+      <name sur="Example" fir="Alice" tit=""></name>
+      <birth bno="0000000000" den="1990-01-01"></birth>
+      <adr str="Example Street" num="1" pnu="10000" cit="Praha" cnt="CZ"></adr>
+      <idds></idds>
+      <email>alice@example.com</email>
+      <tel>600000001</tel>
+      <druc>S</druc>
+      <hlavc>
+        <m1>N</m1><m2>N</m2><m3>N</m3>
+        <m4>A</m4><m5>A</m5><m6>A</m6><m7>A</m7><m8>A</m8><m9>A</m9>
+        <m10>A</m10><m11>A</m11><m12>A</m12>
+        <m13></m13>
+      </hlavc>
+      <vedc>
+        <m1>A</m1><m2>A</m2><m3>A</m3>
+        <m4>N</m4><m5>N</m5><m6>N</m6><m7>N</m7><m8>N</m8><m9>N</m9>
+        <m10>N</m10><m11>N</m11><m12>N</m12>
+        <m13></m13>
+        <zam>A</zam>
+        <duchod></duchod><pdite></pdite><ppm></ppm><pece></pece><ndite></ndite>
+      </vedc>
+      <narok>
+        <m1></m1><m2></m2><m3></m3><m4></m4><m5></m5><m6></m6>
+        <m7></m7><m8></m8><m9></m9><m10></m10><m11></m11><m12></m12><m13></m13>
+      </narok>
+      <sleva>
+        <m1></m1><m2></m2><m3></m3><m4></m4><m5></m5><m6></m6>
+        <m7></m7><m8></m8><m9></m9><m10></m10><m11></m11><m12></m12><m13></m13>
+      </sleva>
+      <vzpm></vzpm>
+    </client>
+    <pvv pri="0">
+      <mesc h="9" v="3"></mesc>
+      <mesv h="9" v="3"></mesv>
+      <mesp>0</mesp>
+      <rdza h="0" v="0"></rdza>
+      <vvz h="0" v="0"></vvz>
+      <dvz h="0" v="0"></dvz>
+      <mvz>0</mvz>
+      <uvz>0</uvz>
+      <vzza></vzza>
+      <vzsu>0</vzsu>
+      <vzsvc>0</vzsvc>
+      <poj>0</poj>
+      <slev>0</slev>
+      <pojposlev>0</pojposlev>
+      <zal>0</zal>
+      <ned>0</ned>
+    </pvv>
+    <prihldp></prihldp>
+    <zal ved="H" pau="A" vz="0" dp="0" np="0"></zal>
+    <pre vra="0"><rok></rok><iban></iban><bs></bs><adr></adr></pre>
+    <prizn><pov>A</pov><meldat></meldat></prizn>
+    <opr datopr="" duvod=""></opr>
+    <spo><name></name><adr></adr></spo>
+    <dat dre=""></dat>
+    <prilo coun="0" plnamoc="N" jina="N"></prilo>
+  </prehledosvc>
+</OSVC>

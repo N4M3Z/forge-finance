@@ -1,0 +1,10 @@
+config.yaml
+**/user/
+.env
+build/
+.claude/
+.gemini/
+.codex/
+.opencode/
+logs/
+.DS_Store

@@ -4,6 +4,8 @@ version: 0.2.0
 description: "Czech invoicing via Fakturoid API v3 — pull invoices, expenses, and income summaries for tax filing. USE WHEN fakturoid, invoices, issued invoices, expenses, income summary, §7 income, OSVČ income."
 ---
 
+# Fakturoid
+
 Pull invoicing data from [Fakturoid API v3][1] for tax and accounting workflows. Covers issued invoices (§7 income), expenses, and annual summaries.
 
 ## Prerequisites

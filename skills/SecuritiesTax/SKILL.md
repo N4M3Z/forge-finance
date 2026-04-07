@@ -4,6 +4,8 @@ version: 0.1.0
 description: "Broker-agnostic securities tax computation — FIFO lot matching, time-test exemption, FX conversion, §8/§10 classification. USE WHEN securities tax, capital gains, time test, FX conversion, dividend tax, cost basis, lot matching."
 ---
 
+# SecuritiesTax
+
 Compute Czech tax obligations on securities transactions. Accepts normalized transaction data from any brokerage parser (Revolut, Interactive Brokers, Trading 212, Erste) and applies SecuritiesTax rules.
 
 ## Input Format

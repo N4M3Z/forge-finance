@@ -4,6 +4,8 @@ version: 0.2.0
 description: "Parse Revolut investment exports into normalized transactions for SecuritiesTax. USE WHEN revolut, revolut CSV, revolut P&L, revolut statement, revolut export."
 ---
 
+# Revolut
+
 Thin brokerage parser. Reads Revolut investment exports and normalizes them into the standard transaction format consumed by SecuritiesTax.
 
 ## Prerequisites

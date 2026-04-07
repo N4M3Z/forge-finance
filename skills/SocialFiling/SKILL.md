@@ -4,6 +4,8 @@ version: 0.2.0
 description: "ČSSZ social security filing — generate and correct Přehled OSVČ for social insurance. USE WHEN ČSSZ, social security, přehled OSVČ, social insurance, důchodové pojištění, OSSZ."
 ---
 
+# SocialFiling
+
 Generate or correct the ČSSZ `Přehled o příjmech a výdajích OSVČ` (social security overview) derived from DPFO data.
 
 ## Context

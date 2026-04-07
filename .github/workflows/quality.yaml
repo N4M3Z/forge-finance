@@ -16,10 +16,12 @@ jobs:
               with:
                   python-version: "3.12"
 
+            - uses: dtolnay/rust-toolchain@stable
+
             - name: Install tools
               run: |
-                  pip install pyyaml ruff
-                  sudo apt-get install -y gitleaks
+                  pip install pyyaml
+                  cargo install --git https://github.com/N4M3Z/forge-cli forge
 
             - name: Validate
               uses: j178/prek-action@v2

@@ -21,7 +21,7 @@ jobs:
             - name: Install tools
               run: |
                   pip install pyyaml
-                  cargo install --git https://github.com/N4M3Z/forge-cli forge
+                  cargo install --git https://github.com/N4M3Z/forge-cli forge-cli
 
             - name: Validate
               uses: j178/prek-action@v2

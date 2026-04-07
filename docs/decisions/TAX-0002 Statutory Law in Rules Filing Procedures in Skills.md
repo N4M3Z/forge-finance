@@ -21,9 +21,9 @@ consulted:
     - DeveloperCouncil
 informed: []
 upstream:
-    - rules/cz/PersonalTaxIncome.md
-    - rules/cz/PersonalTaxDeductions.md
-    - rules/cz/PersonalTaxDeadlines.md
+    - rules/en-CZ/PersonalTaxIncome.md
+    - rules/en-CZ/PersonalTaxDeductions.md
+    - rules/en-CZ/PersonalTaxDeadlines.md
     - skills/TaxReturn/SKILL.md
     - skills/TaxFiling/SKILL.md
 ---

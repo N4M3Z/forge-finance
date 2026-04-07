@@ -19,12 +19,12 @@ accountable:
 consulted: []
 informed: []
 upstream:
-    - rules/cz/PersonalTaxIncome.md
-    - rules/cz/PersonalTaxDeductions.md
-    - rules/cz/PersonalTaxDeadlines.md
-    - rules/cz/LongTermInvestment.md
-    - rules/cz/MortgageInterest.md
-    - rules/cz/SecuritiesTax.md
+    - rules/en-CZ/PersonalTaxIncome.md
+    - rules/en-CZ/PersonalTaxDeductions.md
+    - rules/en-CZ/PersonalTaxDeadlines.md
+    - rules/en-CZ/LongTermInvestment.md
+    - rules/en-CZ/MortgageInterest.md
+    - rules/en-CZ/SecuritiesTax.md
 ---
 
 # Knowledge-First Approach for Czech Personal Income Tax
@@ -64,7 +64,7 @@ No Rust code. No hooks. Skills-only module.
 
 ```text
 forge-finance/
-    rules/cz/
+    rules/en-CZ/
         PersonalTaxIncome.md           # income categories (§6-§10, zákon 586/1992 Sb.)
         PersonalTaxDeductions.md       # nezdanitelné části základu daně (§15)
         PersonalTaxDeadlines.md        # filing deadlines, correction procedures, penalties

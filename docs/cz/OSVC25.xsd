@@ -199,7 +199,7 @@
           <xs:attribute name="ved" type="xs:string" />
           <xs:attribute name="pau" type="xs:string" />
           <xs:attribute name="vzpm" type="xs:string" />
-          <xs:attribute name="duch" type="xs:string" /> 
+          <xs:attribute name="duch" type="xs:string" />
           <xs:attribute name="vz" type="xs:string" />
           <xs:attribute name="dp" type="xs:string" />
           <xs:attribute name="np" type="xs:string" />

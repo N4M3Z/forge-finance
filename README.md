@@ -56,6 +56,10 @@ FAKTUROID_CLIENT_SECRET=<your-oauth-client-secret>
 
 Override defaults in `config.yaml` (gitignored).
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for conventions, structure, and workflow.
+
 ## License
 
 [EUPL-1.2](LICENSE)

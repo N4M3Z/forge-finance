@@ -10,7 +10,7 @@ skills/           Skill definitions (PascalCase directories with SKILL.md)
 rules/            Behavioral rules (always-on session instructions)
 docs/decisions/   Architecture Decision Records
 templates/        ADR and filing templates
-docs/cz/          Czech tax XML schemas (XSD)
+docs/en-CZ/          Czech tax XML schemas (XSD)
 ```
 
 ## Conventions
@@ -24,8 +24,8 @@ docs/cz/          Czech tax XML schemas (XSD)
 ## Validation
 
 ```sh
-make test     # validate module structure
-make lint     # schema + shell linting
+make validate     # validate module structure
+make test         # validate (alias)
 ```
 
 ## License

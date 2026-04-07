@@ -54,11 +54,11 @@ Rules in `rules/` encode Czech tax law with per-number statutory citations. They
 
 The DPFO filing uses DPFDP7 (7th generation, tax years 2024+). All `Veta` elements are flat (attributes only, no child elements). Key elements: VetaD (header + tax computation), VetaP (taxpayer), VetaO (income totals), VetaS (deductions + final tax), VetaT (§7 detail), VetaV (§8-§10 detail), VetaW (foreign income credit), VetaN (refund bank account).
 
-The XSD lives at `docs/cz/dpfdp7_epo2.xsd`. Always validate generated XML:
+The XSD lives at `docs/en-CZ/dpfdp7_epo2.xsd`. Always validate generated XML:
 
 ```sh
 xmllint --noout file.xml
-xmllint --noout --schema docs/cz/dpfdp7_epo2.xsd file.xml
+xmllint --noout --schema docs/en-CZ/dpfdp7_epo2.xsd file.xml
 ```
 
 Filing type is controlled by `dap_typ` on VetaD: `B` (radne), `O` (opravne radne — before deadline), `D` (dodatecne — after deadline), `E` (opravne dodatecne). For `O`/`D`/`E`, the `d_zjist` attribute (discovery date) is mandatory.

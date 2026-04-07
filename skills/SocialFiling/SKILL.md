@@ -57,7 +57,7 @@ File via [ePortál ČSSZ][4] or deliver to the local OSSZ. Deadline: 8 days afte
 
 ## ČSSZ XML Schema
 
-Namespace: `http://schemas.cssz.cz/OSVC2025`. XSD cached at `docs/cz/OSVC25.xsd`. Official docs at [cssz.cz/definice-e-podani-osvc](https://www.cssz.cz/definice-e-podani-osvc).
+Namespace: `http://schemas.cssz.cz/OSVC2025`. XSD cached at `docs/en-CZ/OSVC25.xsd`. Official docs at [cssz.cz/definice-e-podani-osvc](https://www.cssz.cz/definice-e-podani-osvc).
 
 ### Activity Type (`druc`)
 

@@ -34,7 +34,7 @@ All `Veta` elements are flat (attributes only, no child elements). Single-file f
 
 ## Attribute Mappings
 
-The XSD is cached at `docs/cz/dpfdp7_epo2.xsd`. Before adding an attribute, verify it exists: `grep -i "attr" docs/cz/dpfdp7_epo2.xsd`
+The XSD is cached at `docs/en-CZ/dpfdp7_epo2.xsd`. Before adding an attribute, verify it exists: `grep -i "attr" docs/en-CZ/dpfdp7_epo2.xsd`
 
 **VetaO** (§6 income + aggregation):
 
@@ -104,7 +104,7 @@ For `O` and `D`/`E` types, the `d_zjist` attribute (discovery date) becomes mand
 
 ```sh
 xmllint --noout file.xml
-xmllint --noout --schema docs/cz/dpfdp7_epo2.xsd file.xml
+xmllint --noout --schema docs/en-CZ/dpfdp7_epo2.xsd file.xml
 ```
 
 5. Present the corrected XML for user review. **Never write the file without explicit confirmation.**

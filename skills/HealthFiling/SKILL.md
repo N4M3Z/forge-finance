@@ -61,7 +61,7 @@ Correction notification deadline: **8 days** after discovering the change ([§24
 
 ## CPZP JSON Schema
 
-Template cached at `templates/cz/CPZP-prehled-template.json`. Upload via "Načíst ze souboru" on the portal.
+Template cached at `templates/en-CZ/CPZP-prehled-template.json`. Upload via "Načíst ze souboru" on the portal.
 
 ### Key Fields
 

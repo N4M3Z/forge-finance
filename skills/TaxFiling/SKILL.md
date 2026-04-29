@@ -34,30 +34,67 @@ All `Veta` elements are flat (attributes only, no child elements). Single-file f
 
 ## Attribute Mappings
 
-The XSD is cached at `docs/en-CZ/dpfdp7_epo2.xsd`. Before adding an attribute, verify it exists: `grep -i "attr" docs/en-CZ/dpfdp7_epo2.xsd`
+The full ~150-attribute mapping covering VetaP / VetaD / VetaO / VetaS /
+VetaA / VetaB / VetaT lives in the companion file [`dpfdp7-attributes.md`](./dpfdp7-attributes.md).
+Every attribute there is verified against the cached XSD.
 
-**VetaO** (§6 income + aggregation):
+The XSD is at `docs/en-CZ/dpfdp7_epo2.xsd`. Before adding an attribute,
+verify it exists:
 
-| Attribute      | Row | Description                                  |
-| -------------- | --- | -------------------------------------------- |
-| `kc_prij6`     | 31  | Total employment income from all employers   |
-| `kc_zd6p`      | 34  | §6 partial tax base (computed)               |
-| `kc_zd6`       | 36  | §6 partial tax base (transfer from row 34)   |
-| `kc_zd7`       | 37  | §7 partial tax base                          |
-| `kc_uhrn`      | 41  | Sum of §7+§8+§9+§10 (excludes §6)           |
-| `kc_zakldan23` | 42  | §6 + positive(row 41) = aggregate tax base   |
-| `kc_zakldan`   | 45  | Row 42 minus row 44 (after loss deductions)  |
+```sh
+grep -n 'name="<attr>"' docs/en-CZ/dpfdp7_epo2.xsd
+```
 
-**VetaD** (payment rows):
+Optional attributes with no value should be **omitted entirely**, not set to
+`"0"`. EPO rejects zero where empty is expected (e.g., `kc_dazvyhod` row 72,
+`kc_vyplbonus` row 76).
 
-| Attribute      | Row | Description                                  |
-| -------------- | --- | -------------------------------------------- |
-| `kc_zalzavc`   | 84  | Employer-withheld §6 advances                |
-| `kc_zalpred`   | 85  | Taxpayer's own advance payments              |
-| `kc_konkurs`   | 90  | Tax already paid (misleading name, §38gb)    |
-| `kc_zbyvpred`  | 91  | Remaining to pay (+) or overpayment (-)      |
+## Schema Gotchas
 
-Optional attributes with no value should be **omitted entirely**, not set to `"0"`. EPO rejects zero where empty is expected (e.g., `kc_dazvyhod` row 72).
+These ate real time in past sessions — verify each before generating XML.
+
+### Element ordering matters
+
+The XSD is `<xs:sequence>` at the top level. Putting elements out of order
+fails validation. Required prefix order: `VetaD, VetaP, VetaO, VetaS, VetaA*,
+VetaB, VetaT, …`. **VetaB MUST come before VetaT.**
+
+### `dic` format
+
+`VetaP/@dic` is `pattern="[0-9]{1,10}"` — **digits only, no "CZ" prefix**.
+Czech individuals: it equals the rodné číslo without the slash.
+
+### Required fixed attributes on VetaD
+
+- `dokument="DP7"` (XSD `fixed` value)
+- `k_uladis="DPF"` (XSD `fixed` value)
+- `dap_typ`, `rok`, `pln_moc`, `audit`, `c_ufo_cil` (all `use="required"`)
+
+A VetaD missing any of these will be rejected before MOJE daně even renders
+the form.
+
+### Decimal vs integer attributes
+
+Most monetary fields are integers (`fractionDigits=0`). Two key fields are
+decimals with 2 fraction digits — they must include the `.00`:
+- `da_dan16` (row 57)
+- `da_slezap` (row 71)
+
+### MOJE daně rendering quirks
+
+The portal recomputes some derived fields after import (e.g. row 70 úhrn
+slev) but renders most attributes literally. If you map an amount to the
+wrong attribute it lands in the wrong row, even when arithmetically
+equivalent — always cross-check rows 58, 64, 70, 71, 91 visually after
+upload.
+
+The portal accepts only the cached XSD's vocabulary; unknown attributes are
+silently dropped on import (no error). Use `xmllint --schema` locally first.
+
+### Minimum valid skeleton
+
+A minimal řádné §7-only skeleton is in the companion [`skeleton.xml`](./skeleton.xml).
+Validates against the XSD when `X` placeholders are filled with realistic ints.
 
 ## Filing Types
 

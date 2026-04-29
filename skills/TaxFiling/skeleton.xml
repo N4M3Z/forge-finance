@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Minimum valid DPFDP7 skeleton (řádné, §7-only OSVČ paušál case).
+  Replace `X` placeholders with computed integer amounts. Replace `…` strings
+  with taxpayer values. `da_slezap` and `da_dan16` are decimals with 2
+  fraction digits (must include `.00`).
+
+  Validate before use with xmllint against docs/en-CZ/dpfdp7_epo2.xsd.
+
+  Element ordering matters — see Schema Gotchas in SKILL.md. VetaB MUST come
+  before VetaT.
+-->
+<Pisemnost nazevSW="ManualEntry" verzeSW="1.0">
+  <DPFDP7>
+    <VetaD dokument="DP7" k_uladis="DPF" dap_typ="B"
+           rok="YYYY" pln_moc="N" audit="N" c_ufo_cil="451"
+           zdobd_od="01.01.YYYY" zdobd_do="31.12.YYYY"
+           sleva_rp="30840" uhrn_slevy35ba="30840"
+           da_slezap="X.00" kc_dan_po_db="X" kc_dan_celk="X"
+           kc_db_po_odpd="X" kc_zbyvpred="X"/>
+    <VetaP prijmeni="…" jmeno="…" rod_c="…" dic="…"
+           naz_obce="…" ulice="…" c_pop="…" psc="…"
+           stat="ČESKÁ REPUBLIKA" c_pracufo="…"/>
+    <VetaO kc_zd7="X" kc_uhrn="X" kc_zakldan23="X" kc_zakldan="X"/>
+    <VetaS kc_zdsniz="X" kc_zdzaokr="X" da_dan16="X.00"/>
+    <VetaB priloha1="2" priloh_celk="2"/>
+    <VetaT kc_prij7="X" kc_vyd7="X" kc_hosp_rozd="X" kc_zd7p="X"
+           pr_prij7="X" pr_vyd7="X" pr_sazba="60" c_nace="…"
+           celk_pr_prij7="X" celk_pr_vyd7="X" m_podnik="12"
+           vyd7proc="A"/>
+  </DPFDP7>
+</Pisemnost>

@@ -12,7 +12,7 @@ Interactive workflow for preparing or correcting a Czech personal income tax ret
 
 1. **Identify scope.** Ask for the tax year. Locate the project note (`Projects/Taxes YYYY/`). Check PersonalTaxDeadlines rule to determine which deadline applies and whether this is `opravné` or `dodatečné přiznání`.
 
-2. **Inventory documents.** List all files in the project's Assets directory. For each, invoke TaxAnalysis to extract and classify. Present the inventory to the user for confirmation.
+2. **Inventory documents.** First run the [intake questionnaire](./intake-questionnaire.md) to scope income and deduction types in/out. Then list all files in the project's Assets directory. For each in-scope file, invoke TaxAnalysis to extract and classify. Present the inventory to the user for confirmation.
 
 3. **Validate income.** Cross-check extracted income against §6-§10 categories (PersonalTaxIncome rule). For employment income, verify `potvrzení o zdanitelných příjmech` from each employer. For foreign income, identify the applicable double taxation treaty and relief method ([§38f][1]).
 

@@ -93,6 +93,74 @@ Set `typ="O"` on `prehledosvc`. Add `opr` element with `datopr` (correction date
 
 Upload to [ePortál ČSSZ](https://eportal.cssz.cz/web/portal/-/tiskopisy/osvc-2025).
 
+## Submission via ePortál ČSSZ
+
+The interactive `Přehled OSVČ` form **does not accept XML import** for individuals
+— XML import is reserved for batch submission via PVS (accounting firms). For
+OSVČ, two paths:
+
+1. **Fill the interactive form**, save WIP XML to disk ("Uložit pro pozdější
+   dokončení") to refine, then submit "Datovou schránkou" from inside the
+   form (requires ISDS auth).
+2. **Pre-fill XML** from this skill's output, attach it to a manual datová
+   zpráva, and send to the territorial ÚSSZ DS.
+
+### Form access
+
+The durable entry point is the ePortál ČSSZ home page: <https://eportal.cssz.cz>.
+The per-year form has a year-specific URL with a `formID=ZPZS66_<YYYY>.fo`
+pattern (for tax year 2025: `https://eportal.cssz.cz/web/portal/fasBridge?formID=ZPZS66_2025.fo`).
+The form ID changes each year — derive it, do not cache.
+
+### Datová schránka routing (post-2024 reorganization)
+
+ČSSZ merged district OSSZ into territorial ÚSSZ in 2024. Old per-okres DS IDs
+**no longer route**. Search "Územní správa sociálního zabezpečení" + region in
+DS rather than relying on cached IDs.
+
+### Common form pre-fill quirks
+
+- **`<zal np="908">` even for non-NP participants.** The form pre-fills the
+  minimum monthly NP záloha for the year even if the user never enrolled in
+  voluntary nemocenské pojištění. If the user is **not** an NP participant,
+  set `np="0"` before saving — leaving the value risks ČSSZ registering them.
+- **`<hlavc><m13>A</m13></hlavc>` shorthand.** The form may use `m13="A"` for
+  "celoročně hlavní" without filling `m1`-`m12`. Valid; do not expand to
+  per-month flags unless the activity actually changed mid-year.
+- **`<prihldp/>` empty** is the right state for an OSVČ already registered
+  for důchodové pojištění. Only fill it for new registrations.
+
+### New záloha calculation
+
+```
+nová roční pojistné = vyměřovací základ × 0.292
+nová měsíční záloha = ceil(nová roční pojistné / 12)
+```
+
+The new záloha applies from the calendar month following submission of the
+přehled (per [§14 odst. 9 zákona 589/1992][1]). Practical advice: ask the
+user to check their current trvalý příkaz and prepare the change for the
+next month's payment.
+
+### Bank account for payment
+
+**No specific account number is hard-coded in this skill** — ČSSZ assigns the
+account when the user registers as OSVČ. Resolution order, per the
+`BankAccounts` rule:
+
+1. Recall from user memory (last year's verified account).
+2. Otherwise fetch from
+   `https://www.cssz.cz/web/cz/kontakty/region/ossz/<okres>#bankovni-spojeni`
+   for the user's territorial OSSZ. Prefix encoding:
+   - `01011-` důchodové pojištění OSVČ
+   - `11017-` nemocenské pojištění OSVČ
+   - `21012-` zaměstnavatelé / dobrovolné důchodové
+3. If still uncertain, ask the user to copy the account from their předpis
+   záloh PDF or ePortál ČSSZ.
+
+VS = `vsdp` (variabilní symbol důchodového pojištění) from the přehled, **not**
+the rodné číslo.
+
 ## Constraints
 
 - Always present the diff for user confirmation before generating output

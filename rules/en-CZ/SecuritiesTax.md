@@ -18,6 +18,27 @@ From 2025: a **40 million CZK annual cap** on time-test-exempt income was introd
 
 **2025 transitional step-up**: for securities held before 1 January 2025, taxpayers may elect the market value as of 31 December 2024 as the cost basis for future sales ([Grant Thornton CZ][7]).
 
+## Digital Assets — 3-year Time-Test (from 2025)
+
+[Zákon 462/2023 Sb.][8] introduced a 3-year time-test for **digital assets**
+(crypto, tokens; NFTs separately) effective **1 January 2025**. Mirror of the
+securities rule with three differences:
+
+1. **No transitional step-up** — unlike securities, no election to use 31 Dec 2024
+   market value as cost basis. Holding period counts from original acquisition.
+2. **40 mil CZK annual cap** — shared with the securities cap under [§4(1)(w)][4],
+   not separate.
+3. **Sales before 2025** — pre-2025 disposals are taxed under the old rules
+   (gains as §10, no time-test). Only 2025+ sales benefit.
+
+Czech bank or broker statements must distinguish digital asset sales from
+custodial transfers — only realized sales count toward the cap.
+
+When validating: confirm acquisition date (>3 years before sale date), check
+whether the exchange/wallet provides a holding-period statement, and ensure
+total exempt-time-test proceeds (digital + securities combined) stay under
+40 mil CZK before claiming exemption.
+
 ## 100,000 CZK Gross Threshold
 
 If total **gross proceeds** (not profit) from all securities sales in the year do not exceed 100,000 CZK, the income is fully exempt and need not be declared ([§4(1)(v)][5]).
@@ -48,3 +69,4 @@ Czech treatment: declare gross dividend (pre-withholding) under §8. Credit the 
 [5]: https://www.zakonyprolidi.cz/cs/1992-586#p4-1
 [6]: https://www.kurzy.cz/kurzy-men/jednotny-kurz/
 [7]: https://www.grantthornton.cz/en/news/taxation-of-income-from-the-sale-of-securities-from-1-january-2025/
+[8]: https://www.zakonyprolidi.cz/cs/2023-462

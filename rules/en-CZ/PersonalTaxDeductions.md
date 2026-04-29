@@ -43,6 +43,23 @@ Credits reduce tax directly, not the base:
 
 When validating: verify each deduction has proof in project Assets, check retirement products against the shared 48 000 CZK aggregate, cross-reference employer contributions against [§6(9)][8] exemption (50 000 CZK combined).
 
+### Sleva na manželku — post-2024 dual condition
+
+From tax year 2024, [zákon 462/2023 Sb.][9] tightens § 35ba(1)(b). Both
+conditions must be satisfied:
+
+1. The spouse's own income for the year does **not exceed 68 000 CZK**
+   (`mateřská`/`rodičovská` does not count; mzda, DPP/DPČ, nemocenská do count)
+2. The taxpayer lives in `společně hospodařící domácnost` with **a child
+   under 3 years of age** for the months claimed
+
+If either condition fails, the credit is 0. Example: spouse caring for a
+2-year-old but earning 80 000 CZK from part-time work → no credit.
+
+When validating: ask for the spouse's gross income for the year and the
+youngest child's birth date. If the youngest child crossed the 3-year
+mark mid-year, only count months prior to the birthday.
+
 [1]: https://mf.gov.cz/cs/financni-trh/ochrana-spotrebitele/aktuality/2024/dlouhodoby-investicni-produkt-a-danova-podpora-pro-54732
 [2]: https://www.zakonyprolidi.cz/cs/2023-462
 [3]: https://www.zakonyprolidi.cz/cs/1992-586#p15-3
@@ -51,3 +68,4 @@ When validating: verify each deduction has proof in project Assets, check retire
 [6]: https://www.zakonyprolidi.cz/cs/1992-586#p35ba
 [7]: https://www.zakonyprolidi.cz/cs/1992-586#p35c
 [8]: https://www.zakonyprolidi.cz/cs/1992-586#p6-9
+[9]: https://www.zakonyprolidi.cz/cs/2023-462

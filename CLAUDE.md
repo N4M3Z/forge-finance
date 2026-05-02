@@ -32,8 +32,8 @@ TaxAnalysis ────────────────/          SocialFil
 - **TaxAnalysis** — reads financial PDFs and CSVs, extracts amounts and dates, classifies by income category or deduction type.
 - **TaxReturn** — orchestrator. Document inventory, income validation (§6-§10), deduction computation (§15/§15a aggregate), cross-checks, pre-submission checklist.
 - **TaxFiling** — parses existing DPFDP7 XML, diffs against computed values, generates corrected XML. Three modes: parse, diff, generate.
-- **SocialFiling** — generates CSSZ `Prehled OSVC` from corrected DPFO §7 data. 29.2% rate on 50% of §7 base.
-- **HealthFiling** — generates health insurance `Prehled OSVC`, routing to the correct company portal (VZP, CPZP, OZP). 13.5% rate on 50% of §7 base.
+- **SocialFiling** — generates CSSZ `Prehled OSVC` from corrected DPFO §7 data. 29.2% rate on **55%** of §7 base ([§5b zakon 589/1992](https://www.zakonyprolidi.cz/cs/1992-589#p5b), as amended by the 2024 konsolidační balíček).
+- **HealthFiling** — generates health insurance `Prehled OSVC`, routing to the correct company portal (VZP, CPZP, OZP). 13.5% rate on 50% of §7 base ([§3a zakon 592/1992](https://www.zakonyprolidi.cz/cs/1992-592#p3a)).
 
 **Agent**: TaxAdvisor — Czech tax law Q&A specialist. References zakon sections, bilingual (Czech terms in backticks, English explanations). Recommends `danovy poradce` when uncertain.
 

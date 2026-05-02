@@ -12,6 +12,8 @@ Governed by [zákon 280/2009 Sb.][3] (`daňový řád`). [Finanční správa gui
 
 Self-correction via `dodatečné přiznání` avoids the 20% audit penalty. Late filing within 30 days with no prior late filing: 50% reduction on `pokuta`.
 
+See also `IncomeTaxAdvances` rule for the § 38a advance schedule and the § 174 reduction request.
+
 ## Social Security (ČSSZ)
 
 Governed by [zákon 589/1992 Sb.][7]. [ČSSZ payment guidance][2].

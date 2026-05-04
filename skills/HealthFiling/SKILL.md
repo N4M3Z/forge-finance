@@ -2,6 +2,7 @@
 name: HealthFiling
 version: 0.2.0
 description: "Health insurance filing — generate and correct Přehled OSVČ for health insurance companies (CPZP, VZP, OZP). USE WHEN health insurance, přehled OSVČ, zdravotní pojištění, CPZP, VZP, OZP, pojišťovna."
+argument-hint: "[company code e.g. 205 or tax year]"
 ---
 
 # HealthFiling

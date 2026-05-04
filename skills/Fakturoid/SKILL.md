@@ -2,6 +2,7 @@
 name: Fakturoid
 version: 0.2.0
 description: "Czech invoicing via Fakturoid API v3 — pull invoices, expenses, and income summaries for tax filing. USE WHEN fakturoid, invoices, issued invoices, expenses, income summary, §7 income, OSVČ income."
+argument-hint: "[tax year, e.g. 2025]"
 ---
 
 # Fakturoid

@@ -2,6 +2,7 @@
 name: TaxAnalysis
 version: 0.1.0
 description: "Extract and classify financial data from Czech tax documents (PDF, CSV). USE WHEN tax document, extract tax data, classify income, analyze potvrzeni, read tax PDF."
+argument-hint: "[document.pdf or document.csv]"
 ---
 
 # TaxAnalysis

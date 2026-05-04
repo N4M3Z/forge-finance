@@ -2,6 +2,7 @@
 name: SocialFiling
 version: 0.2.0
 description: "ČSSZ social security filing — generate and correct Přehled OSVČ for social insurance. USE WHEN ČSSZ, social security, přehled OSVČ, social insurance, důchodové pojištění, OSSZ."
+argument-hint: "[CSSZ-2025.xml or tax year]"
 ---
 
 # SocialFiling

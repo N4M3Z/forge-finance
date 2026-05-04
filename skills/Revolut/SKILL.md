@@ -2,6 +2,7 @@
 name: Revolut
 version: 0.2.0
 description: "Parse Revolut investment exports into normalized transactions for SecuritiesTax. USE WHEN revolut, revolut CSV, revolut P&L, revolut statement, revolut export."
+argument-hint: "[revolut-export.csv or revolut-pnl.pdf]"
 ---
 
 # Revolut

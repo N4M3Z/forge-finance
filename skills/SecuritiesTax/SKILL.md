@@ -2,6 +2,7 @@
 name: SecuritiesTax
 version: 0.1.0
 description: "Broker-agnostic securities tax computation — FIFO lot matching, time-test exemption, FX conversion, §8/§10 classification. USE WHEN securities tax, capital gains, time test, FX conversion, dividend tax, cost basis, lot matching."
+argument-hint: "[transactions from brokerage parser]"
 ---
 
 # SecuritiesTax

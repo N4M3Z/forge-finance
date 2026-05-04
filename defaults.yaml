@@ -5,6 +5,9 @@ agents:
     TaxAdvisor:
         model: strong
         tools: Read, Grep, Glob, WebSearch, WebFetch
+    CorporateTaxAdvisor:
+        model: strong
+        tools: Read, Grep, Glob, WebSearch, WebFetch
 
 providers:
     claude:

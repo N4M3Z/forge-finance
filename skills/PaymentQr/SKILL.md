@@ -3,6 +3,9 @@ name: PaymentQr
 description: "Generate Czech SPAYD payment QR codes with valid IBAN and account checksums. USE WHEN qr platba, czech qr, spayd, generate payment qr, fundraising qr, donation qr."
 version: 0.1.0
 ---
+
+# PaymentQr
+
 Generate scannable Czech SPAYD payment QR codes that bank apps actually accept. The format is deceptively layered — a QR can scan correctly while the payload is rejected as invalid by ČSOB, KB, Air Bank, or any other Czech bank app.
 
 ## SPAYD Payload Format

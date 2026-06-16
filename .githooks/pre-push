@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# forge module pre-commit hook
-# Canonical source: https://github.com/N4M3Z/forge-cli/blob/main/templates/git/pre-commit
+# forge module pre-push hook — runs the pre-push-staged gates (gitleaks, semgrep).
+# Canonical source: https://github.com/N4M3Z/forge-cli/blob/main/templates/init/.githooks/pre-push
 
 SCRIPT_URL="https://raw.githubusercontent.com/N4M3Z/forge-cli/main/scripts/validate.sh"
-SCRIPT_SHA="f1fc47c463097005152ff2dcd5c8e57e7bb55d9b8c7a61c5b697fc662aeb5bde"
+SCRIPT_SHA="55998b60a7e972c09c9bcc9767d675b95e011e58309c69849b44fec994909d0b"
 
 if command -v prek >/dev/null 2>&1; then
-    prek run --all-files
+    prek run --all-files --stage pre-push
 elif command -v forge >/dev/null 2>&1; then
     forge validate
 else

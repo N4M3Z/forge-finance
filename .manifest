@@ -1,0 +1,31 @@
+.gitattributes:
+  fingerprint: d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c
+  provenance: .provenance/.gitattributes.yaml
+.githooks:
+  jj-push:
+    fingerprint: 38d77528b2961572b678a77400ea1f7658e24859473ad061de44283f8fc3df19
+    provenance: .githooks/.provenance/jj-push.yaml
+  pre-push:
+    fingerprint: 95268a17f36d1eb87cea1dc174763753974ebc54b1e65e2f06c2138778cd2a51
+    provenance: .githooks/.provenance/pre-push.yaml
+.github:
+  workflows:
+    release.yaml:
+      fingerprint: 5983bb680dcbdd12dfcab4f499d7c2f51354b6b8404af64e5a3c3d2ae423c4b1
+      provenance: .github/workflows/.provenance/release.yaml
+.gitlab-ci.yml:
+  fingerprint: 6d6e7f590b272a4c636d69e8a939717c6bb2a189fe4f439ba64aed8150fe4a6f
+  provenance: .provenance/.gitlab-ci.yaml
+agents:
+  .mdschema:
+    fingerprint: ae52030ed8dd0761400444b8f5f7b9de8af4677d9c84729dbdeb98719234457f
+    provenance: agents/.provenance/.mdschema.yaml
+docs:
+  decisions:
+    .mdschema:
+      fingerprint: 4b10d5655ea6f335764742173423d38a400be5b20ea96b0c620f02bef0df846c
+      provenance: docs/decisions/.provenance/.mdschema.yaml
+rules:
+  .mdschema:
+    fingerprint: 4e6c78b7d14eeef521baf44acd73a6201e76174002bff5f83c2f699f0a2e6ed8
+    provenance: rules/.provenance/.mdschema.yaml
